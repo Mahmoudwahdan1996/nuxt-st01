@@ -1,0 +1,16 @@
+html {
+
+    .v-data-table>.v-data-table__wrapper>table>tbody>tr:not(:last-child)>td:last-child,
+    .v-data-table>.v-data-table__wrapper>table>tbody>tr:not(:last-child)>th:last-child {
+        border: unset !important;
+    }
+}
+
+.v-application--is-ltr .v-toolbar__content > .v-btn.v-btn--icon:last-child{
+    margin-right: 20px !important;
+}
+
+header{
+    height: 60px !important;
+
+}

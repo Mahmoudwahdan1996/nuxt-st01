@@ -1,0 +1,223 @@
+
+  .v-data-table>.v-data-table__wrapper>table>tbody>tr:hover:not(.v-data-table__expanded__content):not(.v-data-table__empty-wrapper) {
+    // background: transparent;
+    color: var();
+  
+    .mdi-eye-outline {
+      color: $info;
+    }
+  
+    .mdi-square-edit-outline {
+      color: $warning;
+    }
+  
+    .mdi-restore {
+      color: #000;
+    }
+  
+    .mdi-delete-outline {
+      color: $error;
+    }
+  
+    .mdi-trash-can-outline {
+      color: $error;
+    }
+  }
+  
+  thead th {
+    // background: map-get($green, primary);
+    border-bottom-color: transparent !important;
+    font-weight: 500;
+  }
+  
+  table tbody td .v-list {
+    background: transparent !important;
+  }
+  
+  .v-data-table>.v-data-table__wrapper>table>tbody>tr>th,
+  .v-data-table>.v-data-table__wrapper>table>thead>tr>th,
+  .v-data-table>.v-data-table__wrapper>table>tfoot>tr>th {
+    font-size: 1rem;
+    height: 60px;
+  }
+  
+  .v-data-table>.v-data-table__wrapper>table>tbody>tr>td,
+  .v-data-table>.v-data-table__wrapper>table>thead>tr>td,
+  .v-data-table>.v-data-table__wrapper>table>tfoot>tr>td {
+    height: auto;
+    min-height: 48px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  
+  .v-list-item__icon {
+    margin-left: 5px !important;
+  }
+  
+  .v-data-table {
+  
+    th,
+    td {
+      white-space: nowrap;
+      height: 60px !important;
+  
+      font-size: 1rem !important;
+  
+      .v-list-item__icon {
+        align-self: flex-start;
+        margin: 0;
+      }
+    }
+  }
+  
+  td .v-list,
+  th .v-list {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  
+  tr td:first-of-type {
+    // color: #c5c5c5;
+    font-size: 17px;
+  }
+  
+  .v-data-table tr {
+    display: table-row !important;
+  }
+  
+  .table_small_menu .v-list-item {
+    min-height: 35px !important;
+  
+    &:before {
+      content: '';
+      width: 5px;
+      height: 5px;
+      background: #707070;
+      border-radius: 50%;
+      margin: 0 8px;
+      opacity: 1 !important;
+    }
+  }
+  
+  .vacant {
+    position: relative;
+  
+    &::before {
+      content: '';
+      position: absolute;
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+  
+  .occupid {
+    position: relative;
+  
+    &::before {
+      content: '';
+      position: absolute;
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+  
+  html[dir='ltr'] {
+  
+    .vacant,
+    .occupid {
+      padding-left: 15px;
+  
+      &::before {
+        content: '';
+        left: 0;
+      }
+    }
+  }
+ 
+ 
+  
+  .table-filters {
+    & .form-label {
+      font-weight: 600 !important;
+      margin-bottom: 13px !important;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .v-data-table tr:nth-of-type(odd) td {
+      background: transparent;
+    }
+  
+    thead th {
+      // background: transparent;
+      border-bottom-color: transparent !important;
+      width: 100%;
+    }
+  
+    .v-data-table tr {
+      border-bottom: 3px solid #e0e0e0;
+  
+      &:first-of-type {
+        border: initial;
+      }
+    }
+  
+    .v-data-table>.v-data-table__wrapper>table>tbody>tr>td:not(.v-data-table__mobile-row),
+    .v-data-table>.v-data-table__wrapper>table>tbody>tr>th:not(.v-data-table__mobile-row) {
+      border: 1px solid #f2f1f2;
+    }
+  
+    .v-data-table>.v-data-table__wrapper>table>tbody>tr:not(:last-child)>td:last-child,
+    .v-data-table>.v-data-table__wrapper>table>tbody>tr:not(:last-child)>th:last-child {
+      border: 1px solid #f2f1f2 !important;
+    }
+  
+    .per-pages-grid {
+      // text-align: center !important;
+      display: flex;
+    }
+  }
+  
+  
+  .v-data-table {
+  
+    // overflow: hidden !important;
+  }
+ 
+  
+  td .v-btn.primary>.v-btn__content .v-icon {
+    color: #fff;
+  }
+  
+  .v-data-table>.v-data-table__wrapper>table>tbody>tr:hover:not(.v-data-table__expanded__content):not(.v-data-table__empty-wrapper) {
+    color: currentColor !important;
+  }
+  
+  .v-data-table>.v-data-table__wrapper>table>thead>tr>th {
+    color: currentColor !important;
+  }
+  
+  
+  .v-data-table__wrapper {
+  
+    // border: 1px solid #dadada;
+    border-radius: 16px;
+  
+    table {
+      background-color: #dadada !important;
+      border-spacing: 2px !important;
+      td,
+      th {
+        border: unset !important;
+        background-color: #fff !important;
+    
+      }
+    }
+  
+  }
